@@ -9,8 +9,8 @@ on:
       - main
 
 jobs:
-  build:
-    name: Analyze & Test
+  flutter_ci:
+    name: Flutter CI
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +21,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.38.9'
-          channel: 'stable'
+          channel: stable
 
       - name: Install dependencies
         run: flutter pub get
