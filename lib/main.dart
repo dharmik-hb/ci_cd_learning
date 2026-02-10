@@ -61,4 +61,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+
+  void countNow(){
+    _counter ++;
+  }
+
 }
